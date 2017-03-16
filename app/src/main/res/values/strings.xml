@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PACE Music</string>
+    <string name="title">Music Shop since 1957</string>
+    <string name="about_card">The historical record store of Asti province. Since 1957 by three generations cultivate a passion for everything about the art of music.\n\nA place where to spend hours talking and sharing your music passion.\n</string>
+    <string name="shop">Via Carlo Alberto, 32\n14049 - Nizza Monferrato (ASTI)</string>
+    <string name="phonenumber">+39 0141 721 637</string>
+    <string name="schedule_days">Mon\nTue - Sat\nSun</string>
+    <string name="schedule_times">15:00 &#8211; 19:30\n09:00 &#8211; 12:30  |  15:00 &#8211; 19:30\n3rd Sunday of the month</string>
+    <string name="mailaddress">pace-music@libero.it</string>
+    <string name="weburl">http://www.pacemusic.it/</string>
+    <string name="shop_view">Shop View</string>
+    <string name="shop_name">PACE MUSIC</string>
+    <string name="location_icon">location icon</string>
+    <string name="phone_icon">phone icon</string>
+    <string name="mail_icon">mail icon</string>
+    <string name="schedule_icon">times icon</string>
+    <string name="shop_logo">Pace Music Logo</string>
+    <string name="website_icon">website icon</string>
+</resources>

@@ -1,0 +1,326 @@
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pacemusic"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/shop"
+                app:layout_collapseMode="pin" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax"
+                app:titleTextColor="@android:color/white" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/title"
+                        android:padding="@dimen/m_p_8"
+                        android:text="@string/title"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/pacelogo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="@dimen/m_p_16"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/shop_logo"
+                        android:src="@drawable/pacemusiclogo" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="@dimen/m_p_8"
+                        android:paddingRight="@dimen/m_p_8"
+                        android:paddingTop="@dimen/m_p_8"
+                        android:text="@string/about_card"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/indirizzo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/m_p_16"
+                        android:layout_marginLeft="@dimen/m_p_32"
+                        android:layout_marginRight="@dimen/m_p_16"
+                        android:layout_marginStart="@dimen/m_p_32"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/m_p_2"
+                        android:paddingTop="@dimen/m_p_4"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/location"
+                            style="@style/icons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/location_icon"
+                            android:src="@drawable/ic_location_on" />
+
+                        <Button
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:gravity="start"
+                            android:paddingTop="@dimen/m_p_8"
+                            android:text="@string/shop"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/telefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/m_p_16"
+                        android:layout_marginLeft="@dimen/m_p_32"
+                        android:layout_marginRight="@dimen/m_p_16"
+                        android:layout_marginStart="@dimen/m_p_32"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/m_p_2"
+                        android:paddingTop="@dimen/m_p_2"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/phone"
+                            style="@style/icons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/phone_icon"
+                            android:src="@drawable/ic_local_phone" />
+
+                        <Button
+                            android:id="@+id/phonenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@android:color/white"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/phonenumber"
+                            android:textAlignment="gravity"
+                            android:textSize="@dimen/text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/orari"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/m_p_16"
+                        android:layout_marginEnd="@dimen/m_p_16"
+                        android:layout_marginLeft="@dimen/m_p_32"
+                        android:layout_marginRight="@dimen/m_p_16"
+                        android:layout_marginStart="@dimen/m_p_32"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/m_p_2"
+                        android:paddingTop="@dimen/m_p_2">
+
+                        <ImageView
+                            android:id="@+id/clock"
+                            style="@style/icons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/m_p_50"
+                            android:contentDescription="@string/schedule_icon"
+                            android:src="@drawable/ic_access_time" />
+
+                        <TextView
+                            android:id="@+id/days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:paddingTop="@dimen/m_p_8"
+                            android:text="@string/schedule_days"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hours"
+                            style="@style/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingEnd="0dp"
+                            android:paddingLeft="@dimen/m_p_20"
+                            android:paddingRight="0dp"
+                            android:paddingStart="@dimen/m_p_20"
+                            android:text="@string/schedule_times"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/m_p_16"
+                        android:layout_marginLeft="@dimen/m_p_32"
+                        android:layout_marginRight="@dimen/m_p_16"
+                        android:layout_marginStart="@dimen/m_p_32"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/m_p_2"
+                        android:paddingTop="@dimen/m_p_2"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/webpage"
+                            style="@style/icons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/website_icon"
+                            android:src="@drawable/ic_language" />
+
+                        <Button
+                            android:id="@+id/weburl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:background="@android:color/white"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/weburl"
+                            android:textAlignment="gravity"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/m_p_16"
+                        android:layout_marginLeft="@dimen/m_p_32"
+                        android:layout_marginRight="@dimen/m_p_16"
+                        android:layout_marginStart="@dimen/m_p_32"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/m_p_4"
+                        android:paddingTop="@dimen/m_p_2"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/time"
+                            style="@style/icons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/mail_icon"
+                            android:src="@drawable/ic_mail" />
+
+                        <Button
+                            android:id="@+id/mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:background="@android:color/white"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/mailaddress"
+                            android:textAlignment="gravity"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/text" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
