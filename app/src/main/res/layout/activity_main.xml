@@ -31,6 +31,12 @@
                 android:scaleType="centerCrop"
                 android:contentDescription="@string/shop_view"
                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/shape_scrim"
+                android:layout_gravity="bottom"
+                />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/MyToolbar"
