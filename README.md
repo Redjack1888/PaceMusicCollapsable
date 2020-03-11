@@ -1,5 +1,5 @@
 # PaceMusicCollapsable
-![GitHub Logo](/assets/0035d6a97ccd4aceaf31a5ed9ef4ad26_9_960.jpg)
+![Cover](/assets/0035d6a97ccd4aceaf31a5ed9ef4ad26_9_960.jpg)
 
 PaceMusic Version 2 (Scrolls with CoordinatorLayout) - SingleScreen App (Project 1) for "Android Development for Beginners" (EU Scholarship) by Udacity
 
@@ -17,3 +17,6 @@ Your design must include:
    * Description of business
    * Hours of operation
 
+## Screenshots
+![screen1](/assets/Screenshot_1583947599.png)
+![screen2](/assets/Screenshot_1583947699.png)
