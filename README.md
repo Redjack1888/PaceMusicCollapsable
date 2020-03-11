@@ -19,4 +19,4 @@ Your design must include:
 
 ## Screenshots
 <img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/Screenshot_1583947599.png" width="300" height="533" />
-<img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/assets/Screenshot_1583947699.png" width="300" height="533" />
+<img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/Screenshot_1583947699.png" width="300" height="533" />
