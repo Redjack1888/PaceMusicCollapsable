@@ -18,5 +18,15 @@ Your design must include:
    * Hours of operation
 
 ## Screenshots
+<table>
+<tbody>
+<tr>
+<td><img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/Screenshot_1583947599.png" width="300" height="533" /></td>
+<td><img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/Screenshot_1583947699.png" width="300" height="533" /></td>
+</tr>
+</tbody>
+</table>
+
+
 <img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/Screenshot_1583947599.png" width="300" height="533" />
 <img src="https://github.com/Redjack1888/PaceMusicCollapsable/blob/master/assets/Screenshot_1583947699.png" width="300" height="533" />
